@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Charmander",
+      "price": "500",
+      "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/f/f2/Charmander.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Pikachu",
+      "price": "250",
+      "image": "https://i.pinimg.com/736x/bf/95/34/bf953419d76bf747cba69b55e6e03957.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Mewtwo",
+      "price": "650",
+      "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png",
+      "id": "5"
+    },
+    {
+      "name": "Gyarados",
+      "price": "200",
+      "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/130.png",
+      "id": "6"
+    },
+    {
+      "name": "Butterfree",
+      "price": "500",
+      "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/d/d3/Butterfree.jpg",
+      "id": "7"
+    },
+    {
+      "id": "ee47",
+      "name": "Psyduck",
+      "price": "250",
+      "image": "https://th.bing.com/th/id/R.38c6e1a50d33f6c0c1e09eced4229b94?rik=oafIBEA2bqjJ8Q&pid=ImgRaw&r=0"
+    }
+  ]
+}

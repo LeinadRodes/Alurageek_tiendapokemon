@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    background-color: #2A2E57; 
+}
+
+/* Estiliza a barra de rolagem */
+body::-webkit-scrollbar {
+    width: 8px; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B760FF;
+    border-radius: 4px; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #121A4B; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: white; 
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #4A7CFF; 
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #121A4B;
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FF7F47; 
+}
+
+button {
+    width: 200px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: 0.3s ease all;
+}
+
+#button {
+    border-radius: 15px;
+    height: 45px;
+    min-width: 130px;
+    background-color: #4A7CFF;
+    color: white;
+}
+/* efectos de los botones  */
+#button:hover {
+    background-color: #2A50D3; 
+    transform: scale(1.1); 
+}
+
+#button:active {
+    background-color: #FF7F47;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #010326;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.header {    
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #121A4B; 
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.main-container > section {
+    width: calc(100%/2);
+}
+
+.no-products-message {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #999;
+}
+
+.products-container {
+    max-height: 50vh; 
+    overflow-y: auto; 
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+/* estilizar la barra  */
+.products-container::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+    background-color: #2A2E57; /* Color de fondo de la barra */
+}
+
+.products-container::-webkit-scrollbar-thumb {
+    background-color: #B760FF; 
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #121A4B; /* Borde alrededor del "thumb" */
+}
+
+/* Estilo del track (fondo de la barra de desplazamiento) */
+.products-container::-webkit-scrollbar-track {
+    background-color: #121A4B; /* Fondo de la zona de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.card {
+    background-color: #6A38FF;
+    color: #FFFFFF;
+    width: calc(100%/4);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #1D1251; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-container--value {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
+.img-container {
+    border-color: 3px #000000;
+}
+
+.form-container {
+    padding: 2rem 0;
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+}
+.mapatech_logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: 0 none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.button-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #4A7CFF;
+    color: #FFFFFF;
+}
+.pokeball-icon {
+width: 45px; 
+height: 45px;
+object-fit: contain; 
+margin-right: 8px; 
+}
+
+.button-submit:hover .pokeball-icon {
+    content: url('/assets/Pokeball semi .png'); /* Cambiar a semi cerrada */
+}
+
+.button-submit:active .pokeball-icon {
+    content: url('/assets/Pokeball closer.png'); /* Cambiar a cerrada */
+}
+.button-submit:hover {
+    background-color: #2A50D3; /* Cambio de color en hover */
+}
+
+.button-clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    color: #4A7CFF;
+}
+
+.button-clear:hover {
+    background-color: #F0F0F0;
+    transform: scale(1.05); 
+}
+
+.footer-container {
+    background-color: #010326;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.footer-container > p, small {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container > section {
+        width: 100%; 
+        margin: 2rem 0 ;
+    }
+
+    .form-container {
+        padding: 2rem;
+    }
+
+    .card {
+        width: calc(100% - 20px); 
+        margin-bottom: 15px; 
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-container > p,
+    .footer-container > small {
+        font-size: 14px;
+    }
+}
+
+
